@@ -1,0 +1,61 @@
+Merge Sort Uygulaması
+{[16, 21, 11, 8, 12, 22]}
+
+ \\  Bölme (Divide) Aşaması
+
+ \[16, 21, 11, 8, 12, 22]
+
+   Sol: \[16, 21, 11]
+
+     Sol: \[16]
+     Sağ: \[21, 11]
+
+       Sol: \[21]
+       Sağ: \[11]
+       Birleştir: \[11, 21]
+     Birleştir: \[11, 16, 21]
+   Sağ: \[8, 12, 22]
+
+     Sol: \[8]
+     Sağ: \[12, 22]
+
+       Sol: \[12]
+       Sağ: \[22]
+       Birleştir: \[12, 22]
+     Birleştir: \[8, 12, 22]
+
+ \\  Birleştirme (Merge) Aşaması
+
+ Sol taraf: \[11, 16, 21]
+ Sağ taraf: \[8, 12, 22]
+ Final birleşim:
+
+   Karşılaştırılır:
+
+     8 < 11 → \[8]
+     11 < 12 → \[8, 11]
+     12 < 16 → \[8, 11, 12]
+     16 < 21 → \[8, 11, 12, 16]
+     21 < 22 → \[8, 11, 12, 16, 21]
+     22 → \[8, 11, 12, 16, 21, 22]
+
+---
+
+ Sonuç (Sıralanmış Dizi):
+
+\boxed{[8, 11, 12, 16, 21, 22]}
+
+
+
+
+ Big-O Gösterimi:
+
+Merge Sort’un zaman karmaşıklığı:
+
+ Best Case: O(n log n)
+ Average Case: O(n log n)
+ Worst Case: O(n log n)
+
+→ Her durumda logaritmik bölme ve n kadar birleştirme işlemi yapılır.
+
+{O(n \log n)}
